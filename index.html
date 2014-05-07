@@ -71,6 +71,42 @@
 						<li class="fragment"><code>bgsound</code></li>
 						<li class="fragment"><code>object, embed</code></li>
 						<li class="fragment"><code>< audio /></code></li>
+						<li class="fragment"><code>Audio Data API</code></li>
+						<li class="fragment"><code>Web Audio API</code></li>
+					</ul>
+
+					<aside class="notes">
+						<p>first three points mainly for playing and varying in features</p>
+						<p>Audio Data API gave raw audio access and some ways tom manipulate audio, but API was nut sufficient</p>
+						<p>Newest addition to the family: web audio API</p>
+					</aside>
+
+				</section>
+
+				<section>
+					<h2>Web Audio API</h2>
+
+					<ul class="spaced">
+						<li class="fragment">low-level access to all things audio</li>
+						<li class="fragment">create sounds</li>
+						<li class="fragment">manipulate sounds (filters)</li>
+						<li class="fragment">timing sounds precisely</li>
+						<li class="fragment">tons of other cool stuff (spatial audio, audio analysis)</li>
+					</ul>
+
+					<aside class="notes">
+						<p>create: literally! create sounds from waves</p>
+						<p>manipulate: a rich api to create custom filters easily</p>
+						<p>precision: timing is everything when dealing with more than one sound</p>
+						<p>Who feels comfortable with his knowledge about the physical basics of audio?</p>
+					</aside>
+
+				</section>
+
+				<section>
+					<h2>Analyzing audio editors</h2>
+
+					<ul class="spaced">
 						<li class="fragment">low-level access to all things audio</li>
 						<li class="fragment">create sounds</li>
 						<li class="fragment">manipulate sounds (filters)</li>
@@ -848,12 +884,12 @@
 		    xhr.send();
 			};
 
-			loadBuffer('mixer/songs/rick2.mp3', 'rick');
-			loadBuffer('mixer/songs/wearetherejects-2.mp3', 'rejects');
-			loadBuffer('slash.mp3', 'slash');
-			loadBuffer('dot.mp3', 'dot');
-			loadBuffer('dash.mp3', 'dash');
-			loadBuffer('dotcom.mp3', 'dotcom');
+			// loadBuffer('mixer/songs/rick2.mp3', 'rick');
+			// loadBuffer('mixer/songs/wearetherejects-2.mp3', 'rejects');
+			// loadBuffer('slash.mp3', 'slash');
+			// loadBuffer('dot.mp3', 'dot');
+			// loadBuffer('dash.mp3', 'dash');
+			// loadBuffer('dotcom.mp3', 'dotcom');
 
 			var playBuffer = function(bufferName, when, offset, duration){
 				if(source) source.stop(0);
@@ -863,79 +899,9 @@
 		    source.start(when + context.currentTime, offset, duration);
 			};
 
-			document.getElementById('playWith2sdelay').addEventListener('click', function(){
-				playBuffer('rick', 2, 0, 15);
-			});
-
-			document.getElementById('playWith43soffset').addEventListener('click', function(){
-				playBuffer('rick', 0, 42.9, 10);
-			});
-
-			document.getElementById('stopIn2s').addEventListener('click', function(){
-				source.stop(context.currentTime + 2);
-			});
-
-			document.getElementById('setvalueattime').addEventListener('click', function(){
-				playBuffer('rejects', 0, 0, 8);
-				source.gain.value = 2;
-				source.gain.setValueAtTime(.5, context.currentTime + 5);
-			});
-
-			var now = Date.now();
-			var nextCoolDown = now;
-			var previousCoolDown = now;
-			var coolDownTime = 300;
-
-			var slashDotCooldown = {
-				slash: now,
-				dot: now,
-				dash: now,
-				dotcom: now
-			}
-
-			var checkControllerState = function(){
-				if(!navigator.webkitGetGamepads) return;
-				var gamepads = navigator.webkitGetGamepads();
-				var pad = gamepads[0];
-				var guitar = gamepads[1];
-				if(pad){
-					if((pad.buttons[5] || (guitar && guitar.buttons[1])) && nextCoolDown <= Date.now()){
-						Reveal.next();
-						nextCoolDown = Date.now() + coolDownTime;
-					}
-
-					if((pad.buttons[4] || (guitar && guitar.buttons[3])) && previousCoolDown <= Date.now()){
-						Reveal.prev();
-						previousCoolDown = Date.now() + coolDownTime;
-					}
-
-					var currentC = Date.now();
-					if(pad.buttons[0] && slashDotCooldown.slash <= currentC){
-						playBuffer('slash', 0, 0, 1);
-						slashDotCooldown.slash = currentC + coolDownTime;
-					}
-
-					if(pad.buttons[1] && slashDotCooldown.dot <= currentC){
-						playBuffer('dot', 0, 0, 1);
-						slashDotCooldown.dot = currentC + coolDownTime;
-					}
-
-					if(pad.buttons[2] && slashDotCooldown.dash <= currentC){
-						playBuffer('dash', 0, 0, 1);
-						slashDotCooldown.dash = currentC + coolDownTime;
-					}
-
-					if(pad.buttons[3] && slashDotCooldown.dotcom <= currentC){
-						playBuffer('dotcom', 0, 0, 1);
-						slashDotCooldown.dotcom = currentC + coolDownTime;
-					}
-
-				}
-
-				requestAnimationFrame(checkControllerState);
-			};
-
-			checkControllerState();
+			// document.getElementById('playWith2sdelay').addEventListener('click', function(){
+			// 	playBuffer('rick', 2, 0, 15);
+			// });
 
 		</script>
 
