@@ -1,0 +1,36 @@
+ul.spaced li {
+  margin-bottom: 15px;
+}
+
+p.fragment {
+  margin-bottom: 20px;
+}
+
+span.highlight{
+  color: #ff5e99;
+}
+
+button{
+  padding: 10px;
+  font-size: 15px;
+}
+
+select{
+  font-size: 15px;
+}
+
+input{
+  font-size: 15px;
+}
+
+pre code {
+  font-size: 25px !important; 
+}
+
+#sjshashtag{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #efefef;
+}
