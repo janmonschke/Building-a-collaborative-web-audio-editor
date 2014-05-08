@@ -1,0 +1,850 @@
+{
+   "_id": "arrangement_938rhfe8rf7384f9",
+   "_rev": "2775-f3fa92e967660a29e7263dac000cbcb2",
+   "title": "my arrangement",
+   "type": "arrangement",
+   "gain": "0.4",
+   "buffers": [
+       {
+           "id": "buffer_9hw8fw7gfw76wfjk",
+           "location": "/sounds/tracks/wearetherejects-2.mp3",
+           "name": "wearetherejects-2.mp3"
+       },
+       {
+           "id": "buffer_29465070540089600",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_29465070540089600blob",
+           "name": "chord"
+       },
+       {
+           "id": "buffer_177404245527099700",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_177404245527099700blob",
+           "name": "guitar"
+       },
+       {
+           "id": "buffer_239159754967315740",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_239159754967315740hat-closed.wav",
+           "name": "hat-closed.wav"
+       },
+       {
+           "id": "buffer_36745720408047380",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_36745720408047380808-base.mp3",
+           "name": "808-base.mp3"
+       },
+       {
+           "id": "buffer_601023839002789000",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_601023839002789000snare.wav",
+           "name": "snare.wav"
+       },
+       {
+           "id": "buffer_452465212952667460",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_452465212952667460blob",
+           "name": "Aufnahme von heute"
+       },
+       {
+           "id": "buffer_592510630005169800",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_592510630005169800blob",
+           "name": "my new recording!"
+       },
+       {
+           "id": "buffer_384406338840635100",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_384406338840635100blob",
+           "name": "sidfuhsidfsidfb"
+       },
+       {
+           "id": "buffer_393957341436614140",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_393957341436614140another def tone - desire for love.mp3",
+           "name": "another def tone - desire for love.mp3"
+       },
+       {
+           "id": "buffer_354424462730147650",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_354424462730147650blob",
+           "name": "new recording Sat Mar 29 2014 13:27:43 GMT+0100 (CET).wav"
+       },
+       {
+           "id": "buffer_600712560923013200",
+           "location": "/uploads/arrangement_938rhfe8rf7384f9/buffer_600712560923013200blob",
+           "name": "new recording Mon Apr 07 2014 18:24:46 GMT+0200 (CEST).wav"
+       }
+   ],
+   "tracks": [
+       {
+           "id": "track_sodf298hdifvzdfzb",
+           "title": "Giorgio",
+           "type": "synthesizer",
+           "gain": "1",
+           "trackPosition": 0,
+           "pieces": [
+               {
+                   "id": "synth_sdfohsf98hrf",
+                   "additionalLength": 2,
+                   "position": 1,
+                   "type": "synthesizer",
+                   "synthSettings": {
+                       "osc1": {
+                           "type": "triangle",
+                           "gain": "0.74",
+                           "detune": "0"
+                       },
+                       "osc2": {
+                           "type": "square",
+                           "gain": "0.3",
+                           "detune": "0"
+                       },
+                       "osc3": {
+                           "type": "sine",
+                           "gain": "0.53",
+                           "detune": "0"
+                       },
+                       "lfo": {
+                           "frequency": "0",
+                           "type": "sine"
+                       },
+                       "toneEnvelope": {
+                           "attack": "0.17",
+                           "decay": "1",
+                           "sustain": "2",
+                           "release": "0.41",
+                           "boost": "0.34"
+                       },
+                       "filter": {
+                           "frequency": "5829.06",
+                           "Q": "1.91",
+                           "gain": "0.72",
+                           "detune": "0",
+                           "type": "lowpass",
+                           "activate": true
+                       }
+                   },
+                   "tones": [
+                       {
+                           "position": 0.16,
+                           "duration": 1,
+                           "note": "A2",
+                           "id": "tone_22",
+                           "$$hashKey": "02D"
+                       },
+                       {
+                           "position": 1.4,
+                           "duration": 1,
+                           "note": "C3",
+                           "id": "tone_23",
+                           "$$hashKey": "02F"
+                       },
+                       {
+                           "position": 4.7,
+                           "duration": 2,
+                           "note": "A#3",
+                           "id": "tone_24",
+                           "$$hashKey": "02H"
+                       }
+                   ]
+               }
+           ]
+       },
+       {
+           "id": "track_sodf20983293r8h",
+           "title": "Guitar",
+           "type": "recording",
+           "gain": "1",
+           "trackPosition": 0,
+           "pieces": [
+               {
+                   "buffer_id": "buffer_393957341436614140",
+                   "type": "buffer",
+                   "position": 0,
+                   "id": "piece_562236733129700860",
+                   "offsetStart": 3.809999999999998,
+                   "offsetEnd": 0
+               }
+           ]
+       },
+       {
+           "id": "track_87fwiefnw8f7wo",
+           "title": "Token Bass",
+           "type": "recording",
+           "gain": "0",
+           "trackPosition": 1,
+           "pieces": [
+               {
+                   "buffer_id": "buffer_29465070540089600",
+                   "type": "buffer",
+                   "position": 0.36,
+                   "id": "piece_271872549157497500",
+                   "offsetStart": 2.1184587354058566,
+                   "offsetEnd": 1.5959539642419998
+               },
+               {
+                   "buffer_id": "buffer_177404245527099700",
+                   "type": "buffer",
+                   "position": 1.08,
+                   "id": "piece_87073448053589980",
+                   "offsetStart": 2.9000000000000004,
+                   "offsetEnd": 10.559999999999995
+               },
+               {
+                   "buffer_id": "buffer_177404245527099700",
+                   "type": "buffer",
+                   "position": 2.74,
+                   "id": "piece_617902046196981100",
+                   "offsetStart": 2.8799999999999994,
+                   "offsetEnd": 0
+               }
+           ]
+       },
+       {
+           "id": "track_2366927533326412903903",
+           "title": "Drums",
+           "type": "drums",
+           "pieces": [
+               {
+                   "type": "drum",
+                   "drumType": "trap",
+                   "position": 0,
+                   "id": "piece_drum",
+                   "instruments": [
+                       "hihat-closed",
+                       "bass",
+                       "snare"
+                   ],
+                   "patternOrder": [
+                       "d",
+                       "d",
+                       "d",
+                       "b",
+                       "a",
+                       "a",
+                       "b"
+                   ],
+                   "patterns": {
+                       "c": {
+                           "bpm": 90,
+                           "slots": 16,
+                           "beats": {
+                               "hihat-closed": [
+                                   1,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   1,
+                                   1,
+                                   null,
+                                   1,
+                                   null,
+                                   1,
+                                   1,
+                                   1,
+                                   0,
+                                   1
+                               ],
+                               "bass": [
+                                   0,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   0,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   0
+                               ],
+                               "snare": [
+                                   null,
+                                   null,
+                                   null,
+                                   0,
+                                   1,
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   1,
+                                   0
+                               ],
+                               "kick": [
+                                   1,
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   1,
+                                   1,
+                                   1,
+                                   null,
+                                   1,
+                                   0,
+                                   1,
+                                   null,
+                                   1,
+                                   0
+                               ],
+                               "hihat-open": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ]
+                           }
+                       },
+                       "d": {
+                           "bpm": 100,
+                           "slots": 16,
+                           "beats": {
+                               "bass": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "kick": [
+                                   1,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "snare": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   0,
+                                   0,
+                                   0,
+                                   null,
+                                   0,
+                                   1,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-open": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-closed": [
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   null,
+                                   1,
+                                   null,
+                                   null,
+                                   0,
+                                   1,
+                                   null,
+                                   null,
+                                   null,
+                                   1,
+                                   null
+                               ]
+                           }
+                       },
+                       "e": {
+                           "bpm": 70,
+                           "slots": 16,
+                           "beats": {
+                               "bass": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "kick": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "snare": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-open": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-closed": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ]
+                           }
+                       },
+                       "f": {
+                           "bpm": 70,
+                           "slots": 16,
+                           "beats": {
+                               "bass": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "kick": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "snare": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-open": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ],
+                               "hihat-closed": [
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null,
+                                   null
+                               ]
+                           }
+                       },
+                       "a": {
+                           "bpm": 101,
+                           "slots": 16,
+                           "beats": {
+                               "hihat-closed": [
+                                   1,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   1,
+                                   0,
+                                   1
+                               ],
+                               "bass": [
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0
+                               ],
+                               "snare": [
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0
+                               ],
+                               "kick": [
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   null,
+                                   1,
+                                   1,
+                                   1,
+                                   null,
+                                   1,
+                                   null,
+                                   1,
+                                   1,
+                                   null,
+                                   0
+                               ],
+                               "hihat-open": [
+                                   0,
+                                   null,
+                                   null,
+                                   null,
+                                   0,
+                                   null,
+                                   null,
+                                   null,
+                                   0,
+                                   null,
+                                   null,
+                                   null,
+                                   0,
+                                   null,
+                                   null,
+                                   0
+                               ]
+                           }
+                       },
+                       "b": {
+                           "slots": 16,
+                           "beats": {
+                               "hihat-closed": [
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   1,
+                                   1,
+                                   0,
+                                   1
+                               ],
+                               "bass": [
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0
+                               ],
+                               "snare": [
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   1,
+                                   0,
+                                   0,
+                                   0
+                               ],
+                               "kick": [
+                                   1,
+                                   null,
+                                   0,
+                                   1,
+                                   0,
+                                   null,
+                                   null,
+                                   1,
+                                   1,
+                                   null,
+                                   null,
+                                   1,
+                                   0,
+                                   null,
+                                   1,
+                                   null
+                               ],
+                               "hihat-open": [
+                                   null,
+                                   null,
+                                   0,
+                                   null,
+                                   0,
+                                   null,
+                                   0,
+                                   null,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   0,
+                                   null,
+                                   0,
+                                   null
+                               ]
+                           },
+                           "bpm": 100
+                       }
+                   },
+                   "offsetStart": 0,
+                   "offsetEnd": 0
+               }
+           ],
+           "gain": "0.6"
+       },
+       {
+           "id": "track_236692753332641280",
+           "title": "Guitar",
+           "type": "recording",
+           "pieces": [
+               {
+                   "buffer_id": "buffer_177404245527099700",
+                   "type": "buffer",
+                   "position": 10.4,
+                   "id": "piece_106857670922263170",
+                   "offsetStart": 2.8799999999999932,
+                   "offsetEnd": 10.789999999999996
+               },
+               {
+                   "buffer_id": "buffer_354424462730147650",
+                   "type": "buffer",
+                   "position": 0.4,
+                   "id": "piece_2366249432803371",
+                   "offsetStart": 0.9399999999999992,
+                   "offsetEnd": 1.2000000000000188
+               }
+           ],
+           "gain": "0"
+       },
+       {
+           "id": "track_383468010023028000",
+           "title": "Untitled",
+           "type": "recording",
+           "pieces": [
+               {
+                   "buffer_id": "buffer_600712560923013200",
+                   "type": "buffer",
+                   "position": 1.72,
+                   "id": "piece_853128479950805500",
+                   "offsetStart": 0,
+                   "offsetEnd": 0
+               }
+           ],
+           "gain": "0.8"
+       },
+       {
+           "id": "track_849372930143504300",
+           "title": "Scotland.js #1",
+           "type": "recording",
+           "pieces": [
+           ]
+       }
+   ]
+}
