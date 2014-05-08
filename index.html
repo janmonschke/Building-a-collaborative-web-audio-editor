@@ -50,7 +50,7 @@
 				<section>
 					<h2>Me</h2>
 
-					<p><a href="https://twitter.com/thedeftone">@thedeftone</a></p>
+					<p><a href="https://twitter.com/thedeftone">@thedeftone</a>, <a href="http://janmonschke.com">janmonschke.com</a></p>
 					<p>Frontend Developer from Berlin</p>
 					<div class="fragment">
 						<p>Not really a music background but</p>
@@ -197,6 +197,13 @@
 
 					</section>
 
+<!-- 					<section>
+						<h2>Recording Screenshot</h2>
+
+						<img src="images/recording-a-signal.png" width="600">
+
+					</section> -->
+
 					<section>
 						<h2>Recording Node Graph</h2>
 
@@ -227,10 +234,17 @@
 
 					</section>
 
+<!-- 					<section>
+						<h2>Drums Screenshot</h2>
+
+						<img src="images/drum-edit.png">
+
+					</section> -->
+
 					<section>
 						<h2>Web Audio Timing</h2>
 
-						
+
 						<ul class="spaced">
 							<li class="fragment">No <code>setTimeout/setInterval</code></li>
 							<li class="fragment">Imagine a Joey Jordison based on JS-timing...oh my...</li>
@@ -249,6 +263,161 @@
 
 					</section>
 				</section>
+
+				<section>
+
+					<section>
+						<h2>Synthesizer</h2>
+
+						<img src="images/minimoog.jpg" width="700" data-source="http://createdigitalmusic.com/files/2010/10/minimoogcloseup.jpg">
+
+						<aside class="notes">
+							<p>consists of oscillators, filters and gain control, all present in web audio api</p>
+							<p>Minimoog</p>
+						</aside>
+
+					</section>
+
+					<section>
+					<h2>Oscillators</h2>
+
+					<div>
+						<input type="range" id="oscRange" value="200" min="0" max="2000" />
+						<select id="oscSelect">
+							<option value="0">Sine</option>
+							<option value="1">Square</option>
+							<option value="2">Sawtooth</option>
+							<option value="3">Triangle</option>
+						</select>
+						<button id="playFromRange">Play</button>
+						<button id="oscStop">Stop</button>
+					</div>
+
+					<aside class="notes">
+						<p>there are several forms of waves: sine, sawtooth, triangle</p>
+					</aside>
+
+				</section>
+
+				<script type="text/javascript">
+					var oscContext = new webkitAudioContext();
+					var oscOscillator = null;
+					var oscSelect = document.getElementById('oscSelect');
+					var oscRange = document.getElementById('oscRange');
+
+					var playOsc = function(frequency){
+						stopOsc();
+						oscOscillator = oscContext.createOscillator();
+						oscOscillator.type = parseInt(oscSelect.value);
+						oscOscillator.frequency.value = frequency;
+						oscOscillator.connect(oscContext.destination);
+						oscOscillator.noteOn(0);
+					};
+
+					var stopOsc = function(){
+						if(oscOscillator) oscOscillator.noteOff(0);
+						oscOscillator = null;
+					};
+
+					document.getElementById('playFromRange').addEventListener('click', function(){
+						playOsc(200, oscRange.value);
+					});
+
+					document.getElementById('oscStop').addEventListener('click', function(){
+						stopOsc();
+					});
+
+					oscSelect.addEventListener('change', function(){
+						if(oscOscillator) oscOscillator.type = parseInt(this.value);
+					});
+
+					oscRange.addEventListener('change', function(){
+						if(oscOscillator) oscOscillator.frequency.value = this.value;
+					});
+
+				</script>
+
+					<section>
+						<h2>Synthesizer Node Graph</h2>
+
+						<img src="images/SynthesizerNodeGraph.png" width="900" />
+
+						<a href="http://127.0.0.1:3000" target="_blank">Synth Demo</a>
+
+						<aside class="notes">
+							
+						</aside>
+
+					</section>
+
+					<!-- <section>
+						<h2>Synthesizer Screenshot</h2>
+
+						<img src="images/synth-settings.png">
+
+					</section> -->
+				</section>
+
+
+
+				<section>
+
+					<section>
+						<h2>Collaboration</h2>
+
+						<ul class="spaced">
+							<li class="fragment">First though: simple, lock all the things!</li>
+							<li class="fragment">Hinders creative process</li>
+							<li class="fragment">Frustrating</li>
+							<li class="fragment">Inconsistency problems</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Operational Transformation</h2>
+
+						<img src="images/OperationalTransformation.jpg" width="500"/>
+
+					</section>
+
+					<section>
+						<h2>Operational Transformation</h2>
+
+						<ul class="spaced">
+							<li class="fragment">De-facto standard (Google Drive, SubEthaEdit...)</li>
+							<li class="fragment">Lots of research</li>
+							<li class="fragment"><a href="http://sharejs.org/">ShareJS</a> <3 </li>
+							<li class="fragment">uber-complicated, many edge-cases</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Differential Synchronization</h2>
+
+						<img src="images/DifferentialSynchronization.jpg" width="600"/>
+
+					</section>
+
+				</section>
+
+
+				<section>
+					<h1>THX so much for your attention!</h1>
+
+					<p><a href="http://cl.ly/1H111o1w1Z0T">Read my thesis to dive deeper into the topics</a></p>
+					<p><a href="https://github.com/janmonschke">Source code for editor will soon be released</a></p>
+
+				</section>
+
+
+
+
+
+
+
+
 
 
 				<section>
@@ -624,7 +793,7 @@
 					<aside class="notes">
 						<p>when: start at that time on the time bar, if < currentTime then starts immediately;; offset: offset in the current buffer</p>
 						<p>same goes for the stop method</p>
-						<p>imagein how hard it would be to code that with settimeout, setinterval</p>
+						<p>imagine how hard it would be to code that with settimeout, setinterval</p>
 						<p>NO MORE SETTIMEOUT!!!!</p>
 					</aside>
 				</section>	
@@ -971,6 +1140,7 @@
 		<script src="js/reveal.min.js"></script>
 
 		<script>
+			console.log('TODO: remove demo links and add screenshot slides');
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
